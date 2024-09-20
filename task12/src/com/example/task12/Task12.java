@@ -9,8 +9,9 @@ public class Task12 {
 
         // TODO раскомментируйте и исправьте код
 
-        return BigDecimal.valueOf(sum.floatValue() * Math.pow(percent.floatValue() + 1.0, 12))
-                .setScale(9, RoundingMode.HALF_UP);
+        BigDecimal multiplier = percent.add(BigDecimal.ONE);
+        BigDecimal result = sum.multiply(multiplier.pow(12));
+        return result.setScale(9, RoundingMode.HALF_UP);
     }
 
     public static void main(String[] args) {
