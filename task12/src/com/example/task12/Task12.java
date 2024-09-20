@@ -6,7 +6,6 @@ import java.math.RoundingMode;
 public class Task12 {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
-
         // TODO раскомментируйте и исправьте код
 
         BigDecimal multiplier = percent.add(BigDecimal.ONE);
